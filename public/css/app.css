@@ -1,0 +1,62 @@
+#title-header {
+    font-family: monospace;
+}
+textarea { width: 50%; height: 100%; border: none; }
+#output * {margin-left: 1em}
+
+#theme-icon {
+    position: absolute;
+    height: 40px;
+    padding: 11px .5em;
+    left: 180px;
+    cursor: default;
+    pointer-events: none;
+}
+#select {
+    position: fixed;
+    bottom: 0.5em;
+    left: 50%;
+    z-index: 10;
+    width: 3em;
+    border: none;
+    background: transparent;
+}
+#output {
+    font-family: monospace;
+    overflow-y: scroll;
+    padding: 1%;
+    user-select: text;
+}
+.CodeMirror {
+    height: 100%;
+    border: 0;
+}
+
+
+.container {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: calc(100% - var(--spacing) * 10);
+    top: calc(var(--spacing) * 10);
+    left: 0;
+}
+.CodeMirror {
+    overflow: hidden;
+}
+#output {
+    overflow: auto;
+}
+.CodeMirror, #output {
+    flex: 1 1 0;
+    min-width: 150px;
+    scrollbar-color: rgba(155, 155, 155, 0.3) rgba(23, 23, 23, 0.1);
+    scrollbar-width: thin;
+}
+.divider {
+    width: 6px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    cursor: col-resize;
+    background: #333;
+}
