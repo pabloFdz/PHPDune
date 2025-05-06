@@ -21,6 +21,8 @@
 
 Built on top of [NativePHP](https://github.com/NativePHP)
 <br>
+Uses CodeMirror as code editor
+<br>
 Feel free to contribute to make it better for everyone. But please bear in mind that this is a clone from NativePHP [Kitchen Sink app](https://github.com/NativePHP/kitchen-sink) and it still includes unused files that must be removed.
 
 
